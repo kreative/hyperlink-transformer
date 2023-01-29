@@ -31,7 +31,8 @@ export default function Transformer() {
             // this shouldn't happen, as the only positive response from the server is 200
             // however in the event that another status code between 200-299 shows up we redirect
             // the user to the Kreative Hyperlink error page
-            console.log(response.data);
+            console.log(response.data)
+            s
             window.location.href = "https://kreativehyperlink.com/404";
           }
         })
