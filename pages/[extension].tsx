@@ -31,8 +31,7 @@ export default function Transformer() {
             // this shouldn't happen, as the only positive response from the server is 200
             // however in the event that another status code between 200-299 shows up we redirect
             // the user to the Kreative Hyperlink error page
-            console.log(response.data)
-            s
+            console.log(response.data);
             window.location.href = "https://kreativehyperlink.com/404";
           }
         })
@@ -40,6 +39,7 @@ export default function Transformer() {
           // eventually this should be a more sophisticated logger with mezmo
           console.log(error.response.data);
           // regarldess of the error, the user will be redirected to the 404 page
+          // though the most likely cause of the error is that there was nothing found with a given extension
           window.location.href = "https://kreativehyperlink.com/404";
         });
     };
