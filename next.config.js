@@ -4,12 +4,12 @@ const nextConfig = {
   redirects: async () => {
     return [
       {
-        source: '/',
-        destination: 'https://kreativehyperlink.com',
+        source: "/",
+        destination: "https://kreativehyperlink.com",
         permanent: true,
       },
     ];
-  }
+  },
 };
 
 module.exports = nextConfig;
