@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import { useEffect } from 'react'
+import Head from "next/head";
+import { Inter } from "@next/font/google";
+import { useEffect } from "react";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-
   useEffect(() => {
     window.location.href = "https://kreativehyperlink.com";
   }, []);
@@ -19,5 +18,5 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </>
-  )
+  );
 }
